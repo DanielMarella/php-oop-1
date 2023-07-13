@@ -29,5 +29,13 @@ class Movie{
 }
 
 
+$transformers = new Movie('Transformers', 5, 'IT,ENG', 'Action');
+echo $transformers->getTitle();
+var_dump($transformers);
 
+
+
+$aceVentura = new Movie('Ace_Ventura', 5, 'IT','Commedy');
+echo $aceVentura->getTitle();
+var_dump($aceVentura);
 ?>
