@@ -14,6 +14,11 @@ class Movie{
     public $lang;
 
 
+    function __construct(String $name, Int $vote, String $lang, ){
+        
+    }
+
+
 }
 
 
