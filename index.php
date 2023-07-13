@@ -22,20 +22,49 @@ class Movie{
     }
 
 
-    public function getTitle(){
-        return $this->title;
+    public function myMovie(){
+        echo $this->title;
+        echo $this->vote;
+        echo $this->lang;
+        echo $this->genre;
     }
 
 }
 
 
-$transformers = new Movie('Transformers', 5, 'IT,ENG', 'Action');
-echo $transformers->getTitle();
+$transformers = new Movie(' Transformers ', 5, ' IT,ENG ', ' Action ');
 var_dump($transformers);
 
 
 
-$aceVentura = new Movie('Ace_Ventura', 5, 'IT','Commedy');
-echo $aceVentura->getTitle();
+$aceVentura = new Movie(' Ace_Ventura ', 5, ' IT ',' Commedy ');
 var_dump($aceVentura);
 ?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h3>
+    <?php 
+        echo $transformers->myMovie();
+    ?>
+</h3>
+
+<h3>
+    <?php 
+        echo $aceVentura->myMovie();
+    ?>
+    
+</h3>
+
+
+</body>
+</html>
