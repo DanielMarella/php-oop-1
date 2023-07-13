@@ -12,15 +12,21 @@ class Movie{
     public $title;
     public $vote;
     public $lang;
+    public $genre;
 
-
-    function __construct(String $name, Int $vote, String $lang, ){
-        
+    function __construct(String $title, Int $vote, String $lang, String $genre ){
+        $this -> title = $title;
+        $this -> vote = $vote;
+        $this -> lang = $lang;
+        $this -> genre = $genre;
     }
 
 
-}
+    public function getTitle(){
+        return $this->title;
+    }
 
+}
 
 
 
